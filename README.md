@@ -1,5 +1,4 @@
-# Canopy
-**C**urrency **A**g**NO**stic data **P**a**Y**ment protocol for data and service marketplaces
+# Canopy: Currency AgNOstic data PaYment protocol for data and service marketplaces
 
 ![Canopy](Canopy.png)
 
