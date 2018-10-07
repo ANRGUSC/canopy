@@ -40,3 +40,5 @@ Once the Canopy and ChainLink contracts are active, the system is ready to proce
 
 ### Step 4 ###
 Start the seller and buyer scripts to visually see the behavior of the Canopy protocol.
+
+# Supported By [USC Viterbi Center for Cyber Physical Systems and the Internet of Things] (cci.usc.edu) and [Blockchain @ USC] (blockchain.usc.edu).
