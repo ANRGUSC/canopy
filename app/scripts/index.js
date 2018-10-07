@@ -39,6 +39,9 @@ const App = {
       accounts = accs
       account = accounts[0]
 
+      console.log('CANOPY!')
+      console.log(account)
+
       self.refreshBalance()
     })
   },
@@ -52,15 +55,53 @@ const App = {
     const self = this
 
     let meta
-    MetaCoin.deployed().then(function (instance) {
+    Canopy.deployed().then(function (instance) {
       meta = instance
-      return meta.getBalance.call(account, { from: account })
+      return meta.viewDeposit.call({ from: account })
     }).then(function (value) {
-      const balanceElement = document.getElementById('balance')
+      const balanceElement = document.getElementById('buyer_escrow')
       balanceElement.innerHTML = value.valueOf()
     }).catch(function (e) {
       console.log(e)
       self.setStatus('Error getting balance; see log.')
+    })
+
+    Canopy.deployed().then(function (instance) {
+      meta = instance
+      return meta.getCost.call({ from: account })
+    }).then(function (value) {
+      const balanceElement = document.getElementById('data_price')
+      balanceElement.innerHTML = value.valueOf()
+    }).catch(function (e) {
+      console.log(e)
+      self.setStatus('Error getting balance; see log.')
+    })
+
+  },
+
+  setPrice: function () {
+    const self = this
+
+    const ether = parseInt(document.getElementById('amount').value)
+    const ccy = document.getElementById('ccy').value
+
+    const amount = web3.toWei(ether, 'ether');
+
+    console.log('setting ' + amount + ' ' + ccy)
+
+    this.setStatus('Initiating transaction... (please wait)')
+
+    let meta
+    Canopy.deployed().then(function (instance) {
+      meta = instance
+      return meta.setCost.call(amount, ccy, { from: account })
+    }).then(function() {
+      self.setStatus("Transaction complete!");
+      self.refreshBalance();
+
+    }).catch(function(e) {
+      console.log(e);
+      self.setStatus("Error; see log.");
     })
   },
 

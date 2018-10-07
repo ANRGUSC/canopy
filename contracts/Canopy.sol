@@ -1023,9 +1023,9 @@ contract Canopy is Chainlinked {
 
     uint buyerEscrow = 0;
 
-    uint public test = 0;
+    uint public rate = 0;
 
-    uint public cost;
+    uint public cost = 0;
     string public ccy;
 
     // Only specified address can call the related function
@@ -1062,12 +1062,19 @@ contract Canopy is Chainlinked {
       public checkChainlinkFulfillment(_requestId)
     {
       //calculatePayout(_reportedPrice); // run your calculation with the reported data
-      test = _reportedPrice;
+      rate = _reportedPrice;
     }
 
     function getCost() public constant returns (uint, string)
     {
         return (cost, ccy);
+    }
+
+    function setCost(uint _cost, string _ccy) public 
+      onlyBy(owner)
+    {
+      cost = _cost;
+      ccy = _ccy;
     }
 
     // For buyer to place money in escrow
