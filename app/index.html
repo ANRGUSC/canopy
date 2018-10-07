@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<style>
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .subcontainer {
+    width: 50%;
+  }
+</style>
+<head>
+  <title>CANOPY</title>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <script src="./app.js"></script>
+</head>
+<body>
+  <h1>CANOPY</h1>
+  <h2>Currency Agnostic Data-Streaming Protocol</h2>
+
+  <div class="container">
+    <div class="subcontainer">
+      <h3>Buyer</h3>
+      Menu<br>
+      <br><label for="data_price">Data: </label><span id="data_price">-</span><br>
+      <br><label for="deposit">Deposit:</label><input type="text" id="deposit" value="2"></input> ETH <button id="send" onclick="App.makeDeposit()">Send Deposit</button><br>
+      <br><button id="send" onclick="App.withdraw()">Withdraw</button>
+    </div>
+
+    <div class="subcontainer">
+      <h3>Seller</h3>
+      <br>Price
+      <br><label for="amount">Amount:</label><input type="text" id="amount" value="10"></input>
+      <br><label for="ccy">Currency:</label><input type="text" id="ccy" value="USD"></input>
+      <br><button id="send" onclick="App.setPrice()">Set Price</button><br>
+      <br><label for="buyer_escrow">Buyer's Deposit: </label><span id="buyer_escrow">-</span><br>
+      <br><button id="send" onclick="App.charge()">Charge Buyer</button>
+    </div>
+  </div>
+
+  <br><br>
+  <span id="status"></span>
+  <br>
+  <span class="hint"><strong>Hint:</strong> open the browser developer console to view any errors and warnings.</span>
+</body>
+</html>

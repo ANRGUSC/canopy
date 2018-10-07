@@ -48,8 +48,8 @@ r_eth = r.json()
 currency_dict["LTC"]=r_eth['data']['1027']['quotes']['LTC']['price']
 
 
-for k,v in currency_dict.items():
-            print(k, v)
+# for k,v in currency_dict.items():
+#            print(k, v)
 
 adjust = 1000000000
 
@@ -72,6 +72,6 @@ def hello():
         return json.dumps(ret_)
 
 if __name__ == '__main__':
-    app.run(debug=True, port=5000)
+    app.run(debug=True, host='0.0.0.0', port=5000)
 
 

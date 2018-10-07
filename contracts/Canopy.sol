@@ -1,8 +1,4 @@
-pragma solidity ^0.4.25;
-
-//import "./contracts/chainlink/solidity/contracts/Chainlinked.sol";
-
-
+pragma solidity ^0.4.24;
 
 // File: solidity-cborutils/contracts/Buffer.sol
 
