@@ -40,5 +40,15 @@ Once the Canopy and ChainLink contracts are active, the system is ready to proce
 ### Step 4 ###
 Start the seller and buyer scripts to visually see the behavior of the Canopy protocol.
 
+## Developers
+
+* **Kwame-Lante Wright <kwamelaw@usc.edu>**
+* **Rahul Radhakrishnan <rahulrad@usc.edu>**
+* **Gowri Sankar Ramachandran <gsramach@usc.edu>**
+
+## License
+
+This project is licensed under a permissive license - please see [LICENSE.md](LICENSE.md) for details.
+
 # Supported By
 [USC Viterbi Center for Cyber Physical Systems and the Internet of Things](https://cci.usc.edu) and [Blockchain @ USC](https://blockchain.usc.edu).
