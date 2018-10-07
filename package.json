@@ -1,0 +1,31 @@
+{
+  "name": "canopy",
+  "version": "0.5.0",
+  "description": "Curreny Agnostic Streaming Data Payment Protocol",
+  "main": "index.js",
+  "dependencies": {
+    "remix-ide": "^0.7.3",
+    "solc": "^0.4.25",
+    "truffle": "^4.1.14",
+    "web3": "^0.20.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ANRGUSC/canopy.git"
+  },
+  "keywords": [
+    "Ethereum",
+    "Solidity",
+    "SDPP"
+  ],
+  "author": "",
+  "license": "TBD",
+  "bugs": {
+    "url": "https://github.com/ANRGUSC/canopy/issues"
+  },
+  "homepage": "https://github.com/ANRGUSC/canopy#readme"
+}
