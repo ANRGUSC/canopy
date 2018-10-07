@@ -33,7 +33,7 @@ We believe Canopy has a potential to disrupt the marketplace platforms. As a nex
 Deploy the Canopy smart contract to the Ethereum platform. Make sure the ChainLink credentials (such as node id and link contract address) are correctly configured (see Step 2).
 
 ### Step 2 ###
-The Canopy smart contract interacts with the ChainLink contract to fetch the necessary source of information. Please refer the following documentation for more information: [ChainLink Documentation] (https://docs.chain.link/docs).
+The Canopy smart contract interacts with the ChainLink contract to fetch the necessary source of information. Please refer the following documentation for more information: [ChainLink Documentation](https://docs.chain.link/docs).
 
 ### Step 3 ###
 Once the Canopy and ChainLink contracts are active, the system is ready to process transactions between sellers and buyers.
@@ -42,4 +42,4 @@ Once the Canopy and ChainLink contracts are active, the system is ready to proce
 Start the seller and buyer scripts to visually see the behavior of the Canopy protocol.
 
 # Supported By
-[USC Viterbi Center for Cyber Physical Systems and the Internet of Things] (cci.usc.edu) and [Blockchain @ USC] (blockchain.usc.edu).
+[USC Viterbi Center for Cyber Physical Systems and the Internet of Things](cci.usc.edu) and [Blockchain @ USC(blockchain.usc.edu).
