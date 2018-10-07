@@ -1,6 +1,8 @@
 # Canopy
 **C**urrency **A**g**NO**stic data **P**a**Y**ment protocol for data and service marketplaces
 
+![Canopy](Canopy.png)
+
 # What it does
 Canopy is a currency agnostic data payment protocol for data and service marketplaces. Our protocol enables the sellers to sell data or service in exchange for payments in any desired currency. While Canopy uses Ethereum as the underlying transaction currency, it is not tied to any particular currency in terms of value. In addition, the protocol guarantees reliable data exchange through a novel data streaming mechanism.
 
