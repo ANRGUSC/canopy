@@ -6,9 +6,9 @@ University of Southern California
 http://anrg.usc.edu/
 
 Contributors:
-* Gowri Sankar Ramachandran
 * Kwame-Lante Wright
-* Bhaskar Krishnamachari
+* Rahul Radhakrishnan
+* Gowri Sankar Ramachandran
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal with
